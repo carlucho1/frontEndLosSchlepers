@@ -23,48 +23,99 @@
 
   <body>
 
-    <!-- Para estructurar el HTML se usarán las siguientes etiquetas semánticas:
-    main
-    header
-    nav
-    section
-    article
-    //aside
-    Este proyecto tendrá 4 secciones contenidas dentro de un contenedor main
-    -->
+    <!-- SECCIÓN 1 -->
 
-      <!-- Lo primero que tenemos en nuestra one page es un HEADER -->
+    <section class="container-fluid vh-100">
 
-        <header class="cabecera">
-            <a href="" class="cabecera__link"><img src="images/Logo.jpg" alt="Logo" class="cabecera__img">Agencia Los Shlepers🏁 </a>           
-        </header>
+      <!-- Header de la sección  -->
 
-      <!-- Ahora viene una barra de navegación donde cada enlace nos llevará a otra página o a otra sección de esta misma página (esquema one page) -->
-
-      <nav class="navegacion">
-        <a href="">Inicio</a>
-        <a href="#nosotros">Quiénes somos</a>
-        <a href="#0km">0 KM</a>
-        <a href="usados.html">Usados</a>
-        <a href="#contacto">Contacto</a>
+      <nav class="navbar navbar-light bg-light cabecera">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4 fw-bold" href="#">
+            <img
+              src="./images/Logo.jpg"
+              alt=""
+              width="56"
+              height="45"
+              class="d-inline-block align-text-center"
+            />
+            Agencia Los Shlepers🏁
+          </a>
+        </div>
       </nav>
 
-      <!-- SECCIÓN 1 -- BANNER de la Agencia de autos-->
+      <!-- Barra de navegación -->
 
-      <section class="banner">
-        <!-- Título principal y secunadrio, ojo h1 no se repite sí los otros de h2 a h6 -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Quiénes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#0km">O KM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Usados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-        <h1>Agencia Los Shlepers🏁</h1>
-        <h2>Te ayudamos a conseguir tu vehiculo soñado, con cualquier presupuesto</h2>
+      <!-- Carousel -->
 
-        <!-- Acá va una foto de bacground que se configura en el CSS (ver videos que pasé)-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- El siguiente botón puede ser opcional -->
+          <div class="carousel-inner">
 
-        <a href="">Saber Más</a>
-      </section>
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./images/Fiat cronos.png" class="d-block w-100" alt="...">
+            </div>
 
-      <!-- FIN sección 1 -->
+            <div class="carousel-item" data-bs-interval="2000">
+             <img src="./images/Corolla cross.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/Usado_2.png" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+      </div>
+
+    </section>
+
+    <!-- FIN sección 1 -->
 
       <!-- SECCION 2 es la sección ¿QUIÉNES SOMOS?, se debe llegar a esta parte con un link definido más arriva en el nav; acá se utiliza un article y un aside dentro de la section-->
 
