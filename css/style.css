@@ -65,6 +65,16 @@
 
 /*Inicio Banner*/
 
+.banner_1{
+height: calc(100vh - 110px);
+}
+
+.carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .banner {
     background-image: url(https://thumbs.dreamstime.com/b/retro-car-poster-road-red-golden-sunset-as-background-minimalist-style-simple-design-282128405.jpg);
     /* background-position: fixed; */
